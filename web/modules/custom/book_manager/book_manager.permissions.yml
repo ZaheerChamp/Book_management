@@ -1,0 +1,4 @@
+administer books:
+  title: 'Administer Books'
+  description: 'Add, edit, and delete books.'
+  restrict access: true

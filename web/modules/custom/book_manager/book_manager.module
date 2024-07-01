@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file
+ * module file.
+ */
+
+
+/**
+ * Implements hook_help().
+ */
+function book_manager_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.book_manager':
+      return '<p>' . t('The Book Manager module allows you to manage books.') . '</p>';
+  }
+}
