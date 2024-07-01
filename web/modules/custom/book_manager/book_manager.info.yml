@@ -1,0 +1,10 @@
+name: 'Book Manager'
+type: module
+description: 'manage all books cck'
+core_version_requirement: ^8 || ^9 || ^10
+package: Custom
+dependencies:
+  - drupal:node
+  - drupal:field
+  - drupal:text
+  - drupal:user
