@@ -28,7 +28,8 @@ class BookManagerController extends ControllerBase {
     // Query to load all book nodes.
     $query = \Drupal::entityQuery('node')
       ->condition('type', 'book')
-      ->sort('created', 'DESC');
+      ->sort('created', 'DESC')
+      ->accessCheck(TRUE);
     $nids = $query->execute();
 
     $rows = [];
